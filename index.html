@@ -1,10 +1,11 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipuler Styles</title>
-    <meta charset="utf-8">
-
 </head>
 
 <body>
@@ -14,7 +15,7 @@
             <tr>
                 <td>couleur de fond (rgb)</td>
                 <td>
-                    0<input type="range" min="0" max="255" step=5 name='color' value="0">255
+                    <label for="background"><input type="range" min="0" max="255" step=5 name='color' value="0" onchange="change(this)">255</label>
                 </td>
                 <td rowspan="6" width="400" align="center">
                     <h1 id="p1">Titre de test</h1>
@@ -23,36 +24,38 @@
             <tr>
                 <td>padding</td>
                 <td>
-                    0<input type="range" name="padding" min="0" max="30" step=5 value="0">30
+                    <label for="padding">0<input type="range" name="padding" min="0" max="30" step=5 value="0"onchange="change(this)">30</label>
                 </td>
             </tr>
             <tr>
                 <td>height</td>
                 <td>
-                    0<input type="range" min="5" max="200" name="height" step=50 value="0">200
+                   <label for="height">0<input type="range" min="5" max="200" name="height" step=50 value="0"onchange="change(this)">200</label> 
                 </td>
             </tr>
             <tr>
                 <td>width</td>
                 <td>
-                    0<input type="range" min="5" max="200" name="width" step=50 value="0">200
+                   <label for="width">0<input type="range" min="5" max="200" name="width" step=50 value="0"onchange="change(this)">200</label>
                 </td>
             </tr>
             <tr>
                 <td>arrondi</td>
                 <td>
-                    0<input type="range" min="5" max="30" name="radius" step=5 value="0">30
+                   <label for="arrondi">0<input type="range" min="5" max="30" name="radius" step=5 value="0"onchange="change(this)">30</label> 
                 </td>
             </tr>
             <tr>
                 <td>rotation</td>
                 <td>
-                    0<input type="range" min="5" max="180" name="rotation" step=5 value="0">180
+                   <label for="rotation">0<input type="range" min="5" max="180" name="rotation" step=5 value="0"onchange="change(this)">180</label> 
                 </td>
             </tr>
 
         </table>
 
     </div>
-
+<script src="script.js"></script>
 </body>
+
+</html>
